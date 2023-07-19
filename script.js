@@ -35,10 +35,11 @@ function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
 for(let i=0;i<encodedStr.length;i++){
-	let val=lookup[encodedStr[i]]
-	if(val===" "){
+	
+	if(encodedStr[i]===" "){
 		decodedArr+=" "
 	}else{
+		let val=lookup[encodedStr[i]]
 		decodedArr+=val
 	}
 }
